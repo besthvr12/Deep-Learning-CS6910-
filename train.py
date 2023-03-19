@@ -32,7 +32,7 @@ arguments = parser.parse_args()
 x_train, x_test, x_val, y_train, y_test, y_val = data(arguments.dataset)
 
 wandb.login(key='17d991db26320e751b170877037d1067a164fe6d')
-wandb.init(project=arguments.wandb_project,entity='harshvrma')
+wandb.init(project=arguments.wandb_project,entity=arguments.wandb_entity)
 
 xsize=784
 output_size=10
