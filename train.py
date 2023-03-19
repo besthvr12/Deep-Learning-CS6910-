@@ -23,7 +23,7 @@ parser.add_argument('-w_d', '--weight_decay', help='Weight decay used by optimiz
 parser.add_argument('-w_i', '--weight_init', help = 'choices: ["random", "Xavier"]', type=str, default='random')
 parser.add_argument('-nhl', '--num_layers', help='Number of hidden layers used in feedforward neural network.',type=int, default=1)
 parser.add_argument('-sz', '--hidden_size', help ='Number of hidden neurons in a feedforward layer.', nargs='+', type=int, default=4, required=False)
-parser.add_argument('-a', '--activation', help='choices: ["identity", "sigmoid", "tanh", "ReLU"]', type=str, default='sigmoid')
+parser.add_argument('-a', '--activation', help='choices: ["sigmoid", "tanh", "ReLU"]', type=str, default='sigmoid')
 parser.add_argument('--hlayer_size', type=int, default=32)
 parser.add_argument('-oa', '--output_activation', help = 'choices: ["softmax"]', type=str, default='softmax')
 parser.add_argument('-oc', '--output_size', help ='Number of neurons in output layer used in feedforward neural network.', type = int, default = 10)
